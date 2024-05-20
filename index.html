@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input__dob">
+        <label class="label day__label">Day</label>
+        <label class="label month__label">Month</label>
+        <label class="label year__label">Year</label>
+        <div>
+          <input
+            type="number"
+            class="input day__input"
+            placeholder="DD"
+            required
+          /><br />
+          <span class="error" id="error__day"></span>
+        </div>
+        <div>
+          <input
+            type="number"
+            class="input month__input"
+            placeholder="MM"
+            required
+          /><br />
+          <span class="error" id="error__month"></span>
+        </div>
+        <div>
+          <input
+            type="number"
+            class="input year__input"
+            placeholder="YYYY"
+            required
+          /><br />
+          <span class="error" id="error__year"></span>
+        </div>
+        <img src="./images/icon-arrow.svg" alt="arrow" class="arrow__img" />
+      </div>
+      <div class="output__age">
+        <p><span class="age years"></span> years</p>
+        <p><span class="age months"></span> months</p>
+        <p><span class="age days"></span> days</p>
+      </div>
+      <img
+        src="./images/reset-svgrepo-com.svg"
+        alt="Reset"
+        class="reset__img"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 5rem 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem 1rem 4rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.input__dob {
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+
+  border-bottom: 1px solid hsl(0, 0%, 94%);
+  position: relative;
+}
+
+.arrow__img,
+.reset__img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 8%);
+  padding: 0.7rem;
+  position: absolute;
+  right: 50%;
+  bottom: 0%;
+  transform: translate(50%, 50%);
+  transition: all 0.3s;
+}
+
+.reset__img {
+  background-color: hsl(259, 100%, 65%);
+}
+.reset__img:active,
+.arrow__img:active {
+  opacity: 0.6;
+}
+.label {
+  color: hsl(0, 1%, 44%);
+  font-size: 13px;
+  font-weight: 600;
+}
+.input {
+  width: 60px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 86%);
+  outline: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+.input:focus {
+  border-color: hsl(259, 100%, 65%);
+}
+::placeholder {
+  text-align: center;
+  color: hsl(0, 0%, 86%);
+}
+.error {
+  font-size: 8px;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+}
+
+.hidden {
+  display: none;
+}
+
+.output__age {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 900;
+  margin: 3rem 0;
+}
+.age {
+  margin-right: 2rem;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 500px;
+    height: 400px;
+    padding: 2rem;
+  }
+  .input__dob {
+    position: relative;
+    height: 100px;
+    row-gap: 5px;
+  }
+  .label {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .input {
+    width: 90px;
+    height: 35px;
+    font-size: 18px;
+  }
+  .arrow__img {
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    transform: translate(50%, 50%);
+    transition: all 0.3s;
+  }
+  .output__age {
+    font-size: 3rem;
+
+    margin: 1rem 0;
+  }
+}
