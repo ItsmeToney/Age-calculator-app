@@ -41,7 +41,7 @@ const errYear = function () {
 };
 
 const resetAge = function () {
-  ageOut.forEach((e) => (e.textContent = " "));
+  ageOut.forEach((e) => (e.textContent = ""));
 };
 
 const calculateAge = function () {
@@ -161,7 +161,6 @@ resetImg.addEventListener("click", function () {
   inputFields.forEach((e) => (e.value = ""));
   ageOut.forEach((e) => {
     e.style.opacity = 0;
-    e.style.marginRight = 0;
   });
   resetInputs();
   resetAge();
