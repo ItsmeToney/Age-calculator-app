@@ -90,7 +90,7 @@ body {
   margin: 3rem 0;
 }
 .age {
-  margin-right: 2rem;
+  padding-right: 2rem;
   opacity: 0;
   transition: all 2s ease-in-out;
 }
